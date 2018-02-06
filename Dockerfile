@@ -2,23 +2,7 @@ From postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD docker
 ENV POSTGRES_DB docker
-#Directory paths for including new scripts in docker file
-#------------------------------------------------------------------------------------
-#db_scripts/dbobjects/${NEED_SCHEMA_NAME}/funtions/
-#db_scripts/dbobjects/${NEED_SCHEMA_NAME}/sequences/
-#db_scripts/dbobjects/${NEED_SCHEMA_NAME}/tables/
-#db_scripts/dbobjects/${NEED_SCHEMA_NAME}/triggers/
-#db_scripts/dbobjects/${NEED_SCHEMA_NAME}/views/
-#db_scripts/schemas
-#data/static_data
-#data/data_for_testing
-#------------------------------------------------------------------------------------
-#IMPORTANT after adding /docker-entrypoint-initdb.d/ part of path you have to set order of script execution by number
-#example
-#/docker-entrypoint-initdb.d/1${script_name}.sql
-#/docker-entrypoint-initdb.d/2${script_name}.sql
-#Incuding *.sql scripts
-#------------------------------------------------------------------------------------
+
 #Creating schemas
 ADD scheme/newschema.sql /docker-entrypoint-initdb.d/0newschema.sql
 
