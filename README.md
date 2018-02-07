@@ -39,8 +39,9 @@ In order to check  is your container up & running:
     docker ps -a
   
 In order to connect to database you will need following information which can be found also in Dockerfile:
-Database: docker
-Password: docker
-User: postgres
+
+    Database: docker
+    User: postgres
+    Password: docker
 
 Author: Emir Selimovic
