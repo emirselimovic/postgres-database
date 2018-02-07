@@ -37,6 +37,10 @@ where ${PORT_ON_LOCAL_MACHINE} and ${PORT_INSIDE_CONTAINER} are needed if you wa
 In order to check  is your container up & running:
 
     docker ps -a
-
+  
+In order to connect to database you will need following information which can be found also in Dockerfile:
+Database: docker
+Password: docker
+User: postgres
 
 Author: Emir Selimovic
