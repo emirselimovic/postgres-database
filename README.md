@@ -5,7 +5,7 @@ PostgresDB
 What it is?
 
 Project that contains initial installation of postgres environment in docker and it executes automatically sql scripts that are part of project. The idea of this project is to create database for social network that can be deployed and runned in two commands. Firstly schemas are created after tables are created then relations between tables are added and after that functions, trigger functions , trıggers on tables and views are added to database. After all of that done we populate database with some testing data.
-İn order to understand the flow of data 
+İn order to understand the flow of data you have file wıth chart Relacija Baze.pdf
 
 How to get started?
 In order to start installation you need to have Docker installed on yout machine.
