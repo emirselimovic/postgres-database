@@ -1,8 +1,5 @@
--- FUNCTION: public.insertuser(character, character, character, text, character, integer, character, character, date)
-
--- DROP FUNCTION public.insertuser(character, character, character, text, character, integer, character, character, date);
-
 CREATE OR REPLACE FUNCTION public.insertuser(
+	userid integer,
 	firstname character,
 	lastname character,
 	gender character,
@@ -20,11 +17,11 @@ CREATE OR REPLACE FUNCTION public.insertuser(
 AS $BODY$
 
 BEGIN
-    INSERT INTO tblusers (firstname, lastname, gender, userpassword, emailaddress, mobilenumber, country, address, birthdate) 
-VALUES (firstname, lastname, gender, userpassword, emailaddress, mobilenumber, country, address, birthdate);
+    INSERT INTO tblusers (userid,firstname, lastname, gender, userpassword, emailaddress, mobilenumber, country, address, birthdate) 
+VALUES (userid,firstname, lastname, gender, userpassword, emailaddress, mobilenumber, country, address, birthdate);
 END
 
 $BODY$;
 
-ALTER FUNCTION public.insertuser(character, character, character, text, character, integer, character, character, date)
+ALTER FUNCTION public.insertuser(integer, character, character, character, text, character, integer, character, character, date)
     OWNER TO postgres;
