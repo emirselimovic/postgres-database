@@ -30,7 +30,7 @@ Commands below will tell you how to get a development env up & running
 İn order to create running container from image you need to use command below:
 
     docker run --name ${CONTAINER_NAME} -d -p ${PORT_ON_LOCAL_MACHINE}:${PORT_INSIDE_CONTAINER} ${IMAGE_NAME}
-    example (run --name emir -d -p 5432:5432 eg_postgres)
+    example (docker run --name emir -d -p 5432:5432 eg_postgres)
 
 where ${PORT_ON_LOCAL_MACHINE} and ${PORT_INSIDE_CONTAINER} are needed if you want to enable port forwarding between host machine and container (port is nedeed if you want to connect to your postgres database using some postgres client, ex. pgAdmin)
 
