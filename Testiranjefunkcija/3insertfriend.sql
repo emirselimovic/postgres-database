@@ -7,5 +7,5 @@ SELECT public.insertfriend(
 'emirselimovic74@gmail.com'
 )
 
-select * from tblfriends
-select * from tblfollowers
+--select * from tblfriends
+--select * from tblfollowers

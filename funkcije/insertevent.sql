@@ -1,8 +1,9 @@
--- FUNCTION: public.insertevent(character, character)
+-- FUNCTION: public.insertevent(integer, character, character)
 
--- DROP FUNCTION public.insertevent(character, character);
+-- DROP FUNCTION public.insertevent(integer, character, character);
 
 CREATE OR REPLACE FUNCTION public.insertevent(
+	eventid integer,
 	eventname character,
 	operation character)
     RETURNS void
@@ -13,11 +14,11 @@ CREATE OR REPLACE FUNCTION public.insertevent(
 AS $BODY$
 
 BEGIN
-    INSERT INTO tblevents (eventname,character) 
-VALUES (eventname,character);
+    INSERT INTO tblevents (eventid,eventname,operation) 
+VALUES (eventid,eventname,operation);
 END
 
 $BODY$;
 
-ALTER FUNCTION public.insertevent(character, character)
+ALTER FUNCTION public.insertevent(integer, character, character)
     OWNER TO postgres;

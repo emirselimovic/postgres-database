@@ -5,4 +5,4 @@ SELECT public.insertcomment(
 	'sabinaselimovic@gmail.com'
 )
 
-select * from tblcomments
+--select * from tblcomments

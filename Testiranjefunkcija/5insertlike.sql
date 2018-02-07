@@ -3,3 +3,5 @@ SELECT public.insertlike(
 	'Sabina', 'Lejla', 
 	'sabinaselimovic@gmail.com'
 )
+
+--select * from tbllikes

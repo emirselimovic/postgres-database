@@ -6,4 +6,4 @@ SELECT public.insertfollower(
 	'lejlaselimovic@gmail.com'
 )
 
-select * from tblfollowers
+--select * from tblfollowers
